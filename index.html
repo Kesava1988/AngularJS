@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="moduleName">
 <head>
     <meta charset="UTF-8">
-
-
-
     <title>Angular Testing project</title>
 </head>
 <body>
 
-Name : <input ng-model="name" type="text"> Hello {{'na' + 'me'}}
+Name : <input ng-model="name" type="text"> Hello {{name}}
+
+<div ng-controller="controllerName as controllerVm">
+    {{controllerVm.var1}}
+</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
@@ -18,6 +19,8 @@ Name : <input ng-model="name" type="text"> Hello {{'na' + 'me'}}
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-touch.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-touch.min.js"></script>
+<script src="JS/script.js"></script>
 
 </body>
 </html>
